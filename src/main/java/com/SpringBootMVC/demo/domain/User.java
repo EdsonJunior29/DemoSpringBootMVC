@@ -27,6 +27,8 @@ public class User {
 	@Column(length = 45 , nullable = false)
 	private String lastName;
 
+	private boolean enabled;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -65,6 +67,14 @@ public class User {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+	
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
 	}
 	
 	
