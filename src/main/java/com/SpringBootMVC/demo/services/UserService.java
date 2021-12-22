@@ -32,4 +32,9 @@ public class UserService {
 		throw new UserNotFoundException("Could not find users with Id " + id);
 		
 	}
+	
+	public void delete(Integer id){
+		repo.deleteById(id);
+		
+	}
 }
